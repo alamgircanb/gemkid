@@ -9,8 +9,10 @@ export default defineConfig({
   timeout: 90_000,
   expect: { timeout: 8_000 },
   fullyParallel: true,
-  retries: process.env.CI ? 1 : 0,
-  reporter: process.env.CI ? [['list'], ['html', { open: 'never' }]] : 'list',
+  retries: 0,
+  workers: process.env.CI ? 4 : undefined,
+  // The github reporter turns failures into annotations visible on the workflow run.
+  reporter: process.env.CI ? [['github'], ['list'], ['html', { open: 'never' }]] : 'list',
   use: {
     baseURL: external ?? 'http://127.0.0.1:4173/kidgem/',
     trace: 'retain-on-failure',
