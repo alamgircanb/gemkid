@@ -31,7 +31,8 @@ jobs:
       - run: npm test
       - run: npm run build
         env:
-          VITE_BASE: /gemkid/
+          # Base path follows the repository name, so a repo rename needs no code change.
+          VITE_BASE: /${{ github.event.repository.name }}/
   e2e:
     name: End-to-end and accessibility tests
     runs-on: ubuntu-latest
@@ -72,7 +73,8 @@ jobs:
       - run: if [ -f package-lock.json ]; then npm ci; else npm install --no-audit --no-fund; fi
       - run: npm run build
         env:
-          VITE_BASE: /gemkid/
+          # Base path follows the repository name, so a repo rename needs no code change.
+          VITE_BASE: /${{ github.event.repository.name }}/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
