@@ -73,10 +73,11 @@ export function Layout({ route, children }: { route: Route; children: ReactNode 
       </a>
       <header className="site-header">
         <div className="container header-inner">
-          <Link to={homeTarget} className="brand" aria-label={`KidGem — ${t('nav.home')}`}>
+          <Link to={homeTarget} className="brand">
             <GemLogo size={34} />
             <span>KidGem</span>
             <span className="demo-badge">{t('app.demoBadge')}</span>
+            <span className="sr-only"> — {t('nav.home')}</span>
           </Link>
           <nav className="top-nav" aria-label={t('nav.main')}>
             {nav.map((n) => (
@@ -136,7 +137,7 @@ export function Layout({ route, children }: { route: Route; children: ReactNode 
         </div>
       </header>
 
-      <div className="container" role="region" aria-label="Notices" aria-live="polite">
+      <div className="container" aria-live="polite">
         {s.storageMode === 'memory' && (
           <div style={{ marginTop: '0.75rem' }} className="notice notice-danger" data-testid="storage-warning">
             <span aria-hidden="true">⛔</span>

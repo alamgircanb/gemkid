@@ -990,10 +990,15 @@ html[data-contrast='high'] .progress > span {
   position: relative;
 }
 .choice input {
+  /* The real radio covers its card, so clicks and taps land on the input itself. */
   position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
   opacity: 0;
-  width: 1px;
-  height: 1px;
+  cursor: pointer;
+  z-index: 1;
 }
 .choice label {
   display: flex;
