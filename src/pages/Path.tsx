@@ -21,7 +21,7 @@ export function PathPage({ subjectId }: { subjectId?: string }) {
   const subject = SUBJECTS.find((x) => x.id === subjectId);
   const placement = subject && profile ? profile.placements[subject.id] : undefined;
   const [shownLevel, setShownLevel] = useState<Level | undefined>(placement);
-  const [view, setView] = useState<'list' | 'map'>(() => (readLocal('kidgem.pathView') === 'map' ? 'map' : 'list'));
+  const [view, setView] = useState<'list' | 'map'>(() => (readLocal('gemkid.pathView') === 'map' ? 'map' : 'list'));
 
   if (!profile) return <StartPage />;
   if (!subject)
@@ -44,7 +44,7 @@ export function PathPage({ subjectId }: { subjectId?: string }) {
 
   const setV = (v: 'list' | 'map') => {
     setView(v);
-    writeLocal('kidgem.pathView', v);
+    writeLocal('gemkid.pathView', v);
   };
 
   const lessonState = (l: Lesson) => {

@@ -3,7 +3,7 @@
 | Asset | Where | Origin | Licence / rights | Notes |
 |---|---|---|---|---|
 | Lumi mascot (all colours and accessories) | `src/components/Art.tsx` | Original SVG drawn in code for this project | Project-owned | Working name “Lumi” is not trademark-cleared. |
-| KidGem gem logo and favicon | `src/components/Art.tsx`, `public/favicon.svg` | Original SVG | Project-owned | “KidGem” name not trademark-cleared; a baby-care brand with a similar name exists (doc 00). |
+| GemKid gem logo and favicon | `src/components/Art.tsx`, `public/favicon.svg` | Original SVG | Project-owned | “GemKid” (renamed from the working name KidGem on 2026-10-28) is not trademark-cleared; check name and domain availability before launch. |
 | Pattern shapes, robot, gem dots, baskets, chests | `src/components/Art.tsx`, CSS | Original SVG/CSS | Project-owned | |
 | Emoji used as decorative symbols (🥭 🍌 ☀️ etc.) | lesson content, UI | Rendered by the viewer’s system emoji font | No files shipped | Always paired with text; `aria-hidden`. Appearance varies by device. |
 | Nunito font | npm `@fontsource/nunito` | Google Fonts / Fontsource | SIL Open Font License 1.1 | Bundled at build time. |

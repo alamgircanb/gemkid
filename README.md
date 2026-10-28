@@ -1,6 +1,6 @@
-# KidGem — Play. Learn. Grow.
+# GemKid — Play. Learn. Grow.
 
-KidGem is a learning portal **demo** for Grades 1–8: math, logic and brain games, coding, algorithms, English, French and Bengali. Children follow a visible path, see one clear next step, learn through a fixed cycle (Discover → Guided try → Play → Practice → Challenge → Reflect → Summary) and get feedback that teaches.
+GemKid is a learning portal **demo** for Grades 1–8: math, logic and brain games, coding, algorithms, English, French and Bengali. Children follow a visible path, see one clear next step, learn through a fixed cycle (Discover → Guided try → Play → Practice → Challenge → Reflect → Summary) and get feedback that teaches.
 
 > **Status: public demo, not a production product.** The app runs fully in the browser with device-only progress (IndexedDB). It has 12 complete **draft** lessons that have not been reviewed by educators or fluent-language reviewers. There are no accounts, no backend and no cloud sync. See [STATUS.md](STATUS.md).
 
@@ -28,15 +28,15 @@ Also included: learner profiles (nickname + preset gem avatar), dashboard with a
 
 ```bash
 npm ci                 # clean install from the lockfile
-npm run dev            # dev server at http://localhost:5173/kidgem/
+npm run dev            # dev server at http://localhost:5173/gemkid/
 npm run validate       # content schema, answers, IDs, solvability, prerequisite graph
 npm test               # unit tests (node:test) for scoring, mastery, graph, recommendations, rewards, review, robot, store, i18n
 npm run typecheck      # tsc --noEmit
 npm run lint           # ESLint
-npm run build          # production build into dist/ (base path /kidgem/)
-npm run preview        # serve dist/ at http://127.0.0.1:4173/kidgem/
+npm run build          # production build into dist/ (base path /gemkid/)
+npm run preview        # serve dist/ at http://127.0.0.1:4173/gemkid/
 npx playwright install chromium   # once
-npm run test:e2e       # end-to-end + accessibility tests (builds and serves under /kidgem/)
+npm run test:e2e       # end-to-end + accessibility tests (builds and serves under /gemkid/)
 npm run check          # typecheck + lint + validate + unit tests + build
 ```
 
@@ -44,9 +44,9 @@ For a custom domain at the root, build with `VITE_BASE=/ npm run build`.
 
 ## Deploying to GitHub Pages
 
-1. Push to `main` on `github.com/alamgircanb/kidgem`.
+1. Push to `main` on `github.com/alamgircanb/gemkid`.
 2. In the repository: **Settings → Pages → Build and deployment → Source: GitHub Actions** (one-time owner step).
-3. The workflow `.github/workflows/ci.yml` runs type check, lint, content validation, unit tests, build and Playwright tests, then deploys `dist/` to Pages. The site will be at `https://alamgircanb.github.io/kidgem/`.
+3. The workflow `.github/workflows/ci.yml` runs type check, lint, content validation, unit tests, build and Playwright tests, then deploys `dist/` to Pages. The site will be at `https://alamgircanb.github.io/gemkid/`.
 
 Rollback: re-run the deploy job of an earlier successful workflow run (Actions → choose run → Re-run jobs), or `git revert` the bad commit and push.
 

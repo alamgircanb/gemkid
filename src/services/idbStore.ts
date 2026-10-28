@@ -5,7 +5,7 @@ import type { DataStore, ExportBundle } from './storage.ts';
 import type { Attempt, LessonProgress, Profile, RewardEvent } from '../domain/types.ts';
 import { MemoryStore } from './memoryStore.ts';
 
-const DB_NAME = 'kidgem';
+const DB_NAME = 'gemkid';
 export const DB_VERSION = 1;
 
 function req<T>(r: IDBRequest<T>): Promise<T> {
@@ -129,7 +129,7 @@ export class IdbStore implements DataStore {
   async exportAll(): Promise<ExportBundle> {
     const all = async <T,>(name: string) => (await req(this.db.transaction(name).objectStore(name).getAll())) as T[];
     return {
-      format: 'kidgem-export',
+      format: 'gemkid-export',
       exportVersion: 1,
       exportedAt: new Date().toISOString(),
       profiles: await all<Profile>('profiles'),

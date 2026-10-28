@@ -75,7 +75,7 @@ export function Layout({ route, children }: { route: Route; children: ReactNode 
         <div className="container header-inner">
           <Link to={homeTarget} className="brand">
             <GemLogo size={34} />
-            <span>KidGem</span>
+            <span>GemKid</span>
             <span className="demo-badge">{t('app.demoBadge')}</span>
             <span className="sr-only"> — {t('nav.home')}</span>
           </Link>
@@ -164,7 +164,7 @@ export function Layout({ route, children }: { route: Route; children: ReactNode 
       <footer className="site-footer">
         <div className="container">
           <p style={{ margin: 0 }}>
-            <strong>KidGem</strong> — {t('app.tagline')}
+            <strong>GemKid</strong> — {t('app.tagline')}
           </p>
           <p className="muted small" style={{ margin: '0.3rem 0 0' }}>
             {t('footer.demo')}

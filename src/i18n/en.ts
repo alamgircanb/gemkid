@@ -1,6 +1,6 @@
 // English interface dictionary (source of truth for keys).
 export const en = {
-  'app.name': 'KidGem',
+  'app.name': 'GemKid',
   'app.tagline': 'Play. Learn. Grow.',
   'app.skip': 'Skip to main content',
   'app.loading': 'Loading…',
@@ -26,11 +26,11 @@ export const en = {
   'storage.dismiss': 'Dismiss',
   'storage.deviceOnly': 'Progress is saved only in this browser on this device. Anyone using this device can see it, and clearing browser data erases it.',
 
-  'footer.demo': 'KidGem is a demonstration. Lessons are draft content that has not yet been reviewed by educators or fluent-language reviewers.',
+  'footer.demo': 'GemKid is a demonstration. Lessons are draft content that has not yet been reviewed by educators or fluent-language reviewers.',
   'footer.privacy': 'Privacy & data',
   'footer.terms': 'Terms',
   'footer.help': 'Help & support',
-  'footer.about': 'About KidGem',
+  'footer.about': 'About GemKid',
 
   'home.title': 'Small steps. Bright discoveries.',
   'home.lead': 'Short learning adventures for Grades 1–8 in math, logic, coding, algorithms, English, French and Bengali.',
@@ -453,7 +453,7 @@ export const en = {
   'parent.export': 'Download all records (JSON)',
   'parent.import': 'Import records from a file',
   'parent.importOk': 'Imported {n} learner(s).',
-  'parent.importBad': 'That file is not a valid KidGem export. Nothing was changed.',
+  'parent.importBad': 'That file is not a valid GemKid export. Nothing was changed.',
   'parent.reset': 'Reset lesson progress',
   'parent.resetConfirm': 'Reset {name}’s lesson progress? Answers and gems are kept so mastery evidence is not lost. Type RESET to confirm.',
   'parent.resetDone': 'Progress reset.',
@@ -463,7 +463,7 @@ export const en = {
   'parent.confirmWord': 'Confirmation word',
   'parent.cancel': 'Cancel',
   'parent.confirm': 'Confirm',
-  'parent.noRanking': 'KidGem never compares children or ranks them. Scores show practice evidence, not ability or intelligence.',
+  'parent.noRanking': 'GemKid never compares children or ranks them. Scores show practice evidence, not ability or intelligence.',
 
   'settings.title': 'Settings',
   'settings.for': 'Settings for {name}',
@@ -493,7 +493,7 @@ export const en = {
   'settings.saved': 'Saved.',
   'settings.coverage': 'Interface translation status: {lang} is a draft written without a fluent reviewer yet.',
 
-  'about.title': 'About KidGem',
+  'about.title': 'About GemKid',
   'help.title': 'Help & support',
   'privacy.title': 'Privacy & data (demo)',
   'terms.title': 'Terms (demo)',

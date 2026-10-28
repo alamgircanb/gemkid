@@ -1,4 +1,4 @@
-// Proposed KidGem skills sequence (not an official curriculum).
+// Proposed GemKid skills sequence (not an official curriculum).
 import type { Chapter, Lesson, Skill, SubjectId, TrackId, Level } from '../domain/types.ts';
 import { equalGroups, arrays } from './lessons/math.ts';
 import { patterns, deduction } from './lessons/logic.ts';

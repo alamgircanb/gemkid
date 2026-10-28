@@ -4,7 +4,7 @@
 import type { Attempt, LessonProgress, Profile, RewardEvent } from '../domain/types.ts';
 
 export interface ExportBundle {
-  format: 'kidgem-export';
+  format: 'gemkid-export';
   exportVersion: 1;
   exportedAt: string;
   profiles: Profile[];
@@ -46,7 +46,7 @@ export function parseExport(raw: string): { ok: true; bundle: ExportBundle } | {
   } catch {
     return { ok: false, error: 'not-json' };
   }
-  if (!isObj(data) || data.format !== 'kidgem-export' || data.exportVersion !== 1) return { ok: false, error: 'wrong-format' };
+  if (!isObj(data) || data.format !== 'gemkid-export' || data.exportVersion !== 1) return { ok: false, error: 'wrong-format' };
   for (const k of ['profiles', 'progress', 'attempts', 'rewards']) if (!Array.isArray(data[k])) return { ok: false, error: `missing-${k}` };
   const profiles = data.profiles as unknown[];
   for (const p of profiles) {

@@ -1,5 +1,5 @@
 // Minimal hash router: works on GitHub Pages without server rewrites.
-// Logical routes like /lesson/abc appear as /kidgem/#/lesson/abc.
+// Logical routes like /lesson/abc appear as /gemkid/#/lesson/abc.
 import { useEffect, useState, type AnchorHTMLAttributes, type ReactNode } from 'react';
 
 export interface Route {

@@ -68,7 +68,7 @@ export function ProgressBar({ value, max, label }: { value: number; max: number;
 export function PageTitle({ children, title }: { children: ReactNode; title: string }) {
   const ref = useRef<HTMLHeadingElement>(null);
   useEffect(() => {
-    document.title = `${title} · KidGem`;
+    document.title = `${title} · GemKid`;
   }, [title]);
   useEffect(() => {
     ref.current?.focus({ preventScroll: false });

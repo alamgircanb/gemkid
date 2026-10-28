@@ -1,4 +1,4 @@
-// Core content and progress types for KidGem.
+// Core content and progress types for GemKid.
 // Content types form a discriminated union validated by src/content/validate.ts.
 
 export type SubjectId =

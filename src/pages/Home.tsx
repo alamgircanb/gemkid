@@ -22,7 +22,7 @@ export function HomePage() {
   const { t } = useT();
   const s = useApp();
   useEffect(() => {
-    document.title = `KidGem · ${t('app.tagline')}`;
+    document.title = `GemKid · ${t('app.tagline')}`;
   }, [t]);
   const preview = lessonById('math-g3-equal-groups-01')!.guidedTasks[0];
   return (
@@ -42,7 +42,7 @@ export function HomePage() {
         </div>
         <div className="hero-art">
           <div className="float">
-            <Lumi size={220} mood="cheer" title="Lumi, the KidGem mascot" />
+            <Lumi size={220} mood="cheer" title="Lumi, the GemKid mascot" />
           </div>
         </div>
       </section>

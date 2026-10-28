@@ -3,7 +3,7 @@
 Material choices made while building the first milestone, following the build pack defaults unless noted.
 
 1. **Stack**: Vite + React + TypeScript, no router or state library — a ~40-line hash router and a small store keep dependencies minimal. Runtime dependencies are React, React DOM and two OFL font packages.
-2. **Hash routing + `/kidgem/` base** for GitHub Pages; `VITE_BASE` overrides for a custom domain.
+2. **Hash routing + `/gemkid/` base** for GitHub Pages; `VITE_BASE` overrides for a custom domain.
 3. **Unit tests use Node’s built-in `node:test`** with native TypeScript type stripping (Node ≥ 22.18) instead of Vitest — zero extra dependencies, and the pure domain/store code needs no DOM. Component behaviour (feedback, accessible reordering) is covered by Playwright tests against the real built app.
 4. **Persistence**: IndexedDB v1 schema (`profiles`, `progress`, `attempts`, `rewards`) behind a `DataStore` interface; a memory store is the visible session-only fallback. Rewards have a unique `(profileId, sourceKey)` key, so awards are idempotent in storage as well as in logic.
 5. **Mastery evidence** uses the first submission per item version per session, unassisted (no hints). Retakes use alternative item versions; an identical version counts again only after 24 hours. Best and latest sessions are kept separately. Resetting progress keeps attempts and gems by default.
@@ -14,3 +14,4 @@ Material choices made while building the first milestone, following the build pa
 10. **Parent Zone gate** is a multiplication question, explicitly labelled as not secure.
 11. **Read-aloud** is opt-in and uses the browser’s speech voices; no Bengali voice is promised.
 12. **Sandbox limitation**: the build environment could not reach the npm registry, so the lockfile, type check, lint, Vite build and axe scan were not run locally (see STATUS.md). The app was bundled with a preinstalled esbuild for local end-to-end testing.
+13. **Renamed KidGem → GemKid** (owner decision, 2026-10-28): brand, repository (`alamgircanb/gemkid`), Pages path (`/gemkid/`), storage keys and export format (`gemkid-export`). The original build-pack documents in `docs/0*_*.md` keep the old working name as historical specifications. Earlier device-local progress under the old name is not migrated (demo data only).

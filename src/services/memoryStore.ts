@@ -50,7 +50,7 @@ export class MemoryStore implements DataStore {
   }
   async exportAll(): Promise<ExportBundle> {
     return {
-      format: 'kidgem-export',
+      format: 'gemkid-export',
       exportVersion: 1,
       exportedAt: new Date().toISOString(),
       profiles: await this.listProfiles(),

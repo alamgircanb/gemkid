@@ -1,8 +1,8 @@
 {
-  "name": "kidgem",
+  "name": "gemkid",
   "private": true,
   "version": "0.1.0",
-  "description": "KidGem: a Grades 1–8 learning portal demo — math, logic, coding, algorithms, English, French and Bengali. Play. Learn. Grow.",
+  "description": "GemKid: a Grades 1–8 learning portal demo — math, logic, coding, algorithms, English, French and Bengali. Play. Learn. Grow.",
   "type": "module",
   "engines": {
     "node": ">=22.18"

@@ -2,7 +2,7 @@
 import type { MessageKey } from './en.ts';
 
 export const bn: Partial<Record<MessageKey, string>> = {
-  'app.name': 'KidGem',
+  'app.name': 'GemKid',
   'app.tagline': 'খেলো। শেখো। বেড়ে ওঠো।',
   'app.skip': 'মূল অংশে যাও',
   'app.loading': 'লোড হচ্ছে…',
@@ -28,11 +28,11 @@ export const bn: Partial<Record<MessageKey, string>> = {
   'storage.dismiss': 'বন্ধ করো',
   'storage.deviceOnly': 'অগ্রগতি শুধু এই ডিভাইসের এই ব্রাউজারে সংরক্ষিত থাকে। এই ডিভাইস যে-কেউ ব্যবহার করলে তা দেখতে পারবে, আর ব্রাউজারের ডেটা মুছলে তা মুছে যাবে।',
 
-  'footer.demo': 'KidGem একটি ডেমো। পাঠগুলো খসড়া; এখনও শিক্ষক বা দক্ষ ভাষা-পর্যালোচক যাচাই করেননি।',
+  'footer.demo': 'GemKid একটি ডেমো। পাঠগুলো খসড়া; এখনও শিক্ষক বা দক্ষ ভাষা-পর্যালোচক যাচাই করেননি।',
   'footer.privacy': 'গোপনীয়তা ও ডেটা',
   'footer.terms': 'শর্তাবলি',
   'footer.help': 'সাহায্য ও সহায়তা',
-  'footer.about': 'KidGem পরিচিতি',
+  'footer.about': 'GemKid পরিচিতি',
 
   'home.title': 'ছোট ছোট পা। উজ্জ্বল আবিষ্কার।',
   'home.lead': 'প্রথম থেকে অষ্টম শ্রেণির জন্য ছোট ছোট শেখার অভিযান: গণিত, যুক্তি, কোডিং, অ্যালগরিদম, ইংরেজি, ফরাসি ও বাংলা।',
@@ -455,7 +455,7 @@ export const bn: Partial<Record<MessageKey, string>> = {
   'parent.export': 'সব রেকর্ড ডাউনলোড করুন (JSON)',
   'parent.import': 'ফাইল থেকে রেকর্ড আনুন',
   'parent.importOk': '{n} জন শিক্ষার্থী আনা হয়েছে।',
-  'parent.importBad': 'ফাইলটি বৈধ KidGem এক্সপোর্ট নয়। কিছুই বদলানো হয়নি।',
+  'parent.importBad': 'ফাইলটি বৈধ GemKid এক্সপোর্ট নয়। কিছুই বদলানো হয়নি।',
   'parent.reset': 'পাঠের অগ্রগতি রিসেট করুন',
   'parent.resetConfirm': '{name}-এর পাঠের অগ্রগতি রিসেট করবেন? আয়ত্তের প্রমাণ যাতে না হারায়, তাই উত্তর আর রত্ন থেকে যাবে। নিশ্চিত করতে RESET লিখুন।',
   'parent.resetDone': 'অগ্রগতি রিসেট হয়েছে।',
@@ -465,7 +465,7 @@ export const bn: Partial<Record<MessageKey, string>> = {
   'parent.confirmWord': 'নিশ্চিতকরণ শব্দ',
   'parent.cancel': 'বাতিল',
   'parent.confirm': 'নিশ্চিত করুন',
-  'parent.noRanking': 'KidGem কখনও শিশুদের তুলনা বা র‍্যাংকিং করে না। ফলাফল শুধু অনুশীলনের প্রমাণ দেখায়, সামর্থ্য বা বুদ্ধি নয়।',
+  'parent.noRanking': 'GemKid কখনও শিশুদের তুলনা বা র‍্যাংকিং করে না। ফলাফল শুধু অনুশীলনের প্রমাণ দেখায়, সামর্থ্য বা বুদ্ধি নয়।',
 
   'settings.title': 'সেটিংস',
   'settings.for': '{name}-এর সেটিংস',
@@ -495,7 +495,7 @@ export const bn: Partial<Record<MessageKey, string>> = {
   'settings.saved': 'সংরক্ষিত হয়েছে।',
   'settings.coverage': 'অনুবাদের অবস্থা: {lang} একটি খসড়া, এখনও দক্ষ ভাষা-পর্যালোচক যাচাই করেননি।',
 
-  'about.title': 'KidGem পরিচিতি',
+  'about.title': 'GemKid পরিচিতি',
   'help.title': 'সাহায্য ও সহায়তা',
   'privacy.title': 'গোপনীয়তা ও ডেটা (ডেমো)',
   'terms.title': 'শর্তাবলি (ডেমো)',

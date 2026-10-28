@@ -1,6 +1,6 @@
 import { defineConfig, devices } from '@playwright/test';
 
-// By default the tests build and serve the production bundle under /kidgem/ (the
+// By default the tests build and serve the production bundle under /gemkid/ (the
 // GitHub Pages path). Set PW_BASE_URL to test an already-running server instead.
 const external = process.env.PW_BASE_URL;
 
@@ -14,7 +14,7 @@ export default defineConfig({
   // The github reporter turns failures into annotations visible on the workflow run.
   reporter: process.env.CI ? [['github'], ['list'], ['html', { open: 'never' }]] : 'list',
   use: {
-    baseURL: external ?? 'http://127.0.0.1:4173/kidgem/',
+    baseURL: external ?? 'http://127.0.0.1:4173/gemkid/',
     trace: 'retain-on-failure',
   },
   projects: [
@@ -25,7 +25,7 @@ export default defineConfig({
     ? undefined
     : {
         command: 'npm run build && npm run preview -- --host 127.0.0.1',
-        url: 'http://127.0.0.1:4173/kidgem/',
+        url: 'http://127.0.0.1:4173/gemkid/',
         reuseExistingServer: !process.env.CI,
         timeout: 180_000,
       },

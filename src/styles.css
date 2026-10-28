@@ -1,4 +1,4 @@
-/* KidGem visual system. Colours checked for text contrast on their actual backgrounds
+/* GemKid visual system. Colours checked for text contrast on their actual backgrounds
    (see docs/ACCESSIBILITY.md). Subject accents are decorative; text uses the -ink variants. */
 :root {
   --bg: #fffdf7;

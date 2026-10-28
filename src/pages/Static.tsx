@@ -26,7 +26,7 @@ export function AboutPage() {
       <div className="row">
         <Lumi size={90} mood="cheer" />
         <p style={{ flex: 1 }}>
-          <strong>KidGem</strong> means every child is a gem. It is a learning portal idea for Grades 1–8, covering math, logic and brain games, coding,
+          <strong>GemKid</strong> means every kid is a gem. It is a learning portal idea for Grades 1–8, covering math, logic and brain games, coding,
           algorithms, English, French and Bengali.
         </p>
       </div>
@@ -90,7 +90,7 @@ export function HelpPage() {
       <details>
         <summary>Is there audio?</summary>
         <p>
-          Recorded audio is not available yet. If you turn on the read-aloud button in Settings, KidGem uses your device’s built-in voices when one exists
+          Recorded audio is not available yet. If you turn on the read-aloud button in Settings, GemKid uses your device’s built-in voices when one exists
           for the language. Bengali voices are often unavailable; the written text is always shown.
         </p>
       </details>
@@ -113,7 +113,7 @@ export function PrivacyPage() {
       </ul>
       <h2>Where it is stored</h2>
       <p>
-        Everything is stored in your browser’s IndexedDB on this device. Nothing is sent to a KidGem server, because the demo has none. Anyone using this
+        Everything is stored in your browser’s IndexedDB on this device. Nothing is sent to a GemKid server, because the demo has none. Anyone using this
         browser profile can see the records. Clearing site data deletes them.
       </p>
       <h2>What the demo does not do</h2>
@@ -138,10 +138,10 @@ export function TermsPage() {
     <StaticPage titleKey="terms.title">
       <Notice>These are plain-language demo notes, not reviewed legal terms.</Notice>
       <ul>
-        <li>KidGem is an early demonstration provided as is, free of charge, for evaluation and family testing.</li>
+        <li>GemKid is an early demonstration provided as is, free of charge, for evaluation and family testing.</li>
         <li>Lessons are draft content. Please report mistakes so they can be corrected before review and publication.</li>
-        <li>“KidGem” is a working name. No claim of trademark clearance or curriculum endorsement is made.</li>
-        <li>Fonts are used under the SIL Open Font License. KidGem illustrations are original drawings made for this project.</li>
+        <li>“GemKid” is a working name. No claim of trademark clearance or curriculum endorsement is made.</li>
+        <li>Fonts are used under the SIL Open Font License. GemKid illustrations are original drawings made for this project.</li>
       </ul>
     </StaticPage>
   );

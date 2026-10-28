@@ -2,7 +2,7 @@
 import type { MessageKey } from './en.ts';
 
 export const fr: Partial<Record<MessageKey, string>> = {
-  'app.name': 'KidGem',
+  'app.name': 'GemKid',
   'app.tagline': 'Jouer. Apprendre. Grandir.',
   'app.skip': 'Aller au contenu principal',
   'app.loading': 'Chargement…',
@@ -28,11 +28,11 @@ export const fr: Partial<Record<MessageKey, string>> = {
   'storage.dismiss': 'Fermer',
   'storage.deviceOnly': 'Les progrès sont enregistrés uniquement dans ce navigateur, sur cet appareil. Toute personne utilisant l’appareil peut les voir, et effacer les données du navigateur les supprime.',
 
-  'footer.demo': 'KidGem est une démonstration. Les leçons sont des brouillons qui n’ont pas encore été relus par des enseignants ni par des locuteurs natifs.',
+  'footer.demo': 'GemKid est une démonstration. Les leçons sont des brouillons qui n’ont pas encore été relus par des enseignants ni par des locuteurs natifs.',
   'footer.privacy': 'Confidentialité et données',
   'footer.terms': 'Conditions',
   'footer.help': 'Aide et assistance',
-  'footer.about': 'À propos de KidGem',
+  'footer.about': 'À propos de GemKid',
 
   'home.title': 'Petits pas. Grandes découvertes.',
   'home.lead': 'De courtes aventures d’apprentissage pour la 1re à la 8e année : maths, logique, codage, algorithmes, anglais, français et bengali.',
@@ -455,7 +455,7 @@ export const fr: Partial<Record<MessageKey, string>> = {
   'parent.export': 'Télécharger toutes les données (JSON)',
   'parent.import': 'Importer des données depuis un fichier',
   'parent.importOk': '{n} élève(s) importé(s).',
-  'parent.importBad': 'Ce fichier n’est pas une exportation KidGem valide. Rien n’a été modifié.',
+  'parent.importBad': 'Ce fichier n’est pas une exportation GemKid valide. Rien n’a été modifié.',
   'parent.reset': 'Réinitialiser la progression',
   'parent.resetConfirm': 'Réinitialiser la progression de {name} ? Les réponses et les gemmes sont conservées pour ne pas perdre les preuves de maîtrise. Écris RESET pour confirmer.',
   'parent.resetDone': 'Progression réinitialisée.',
@@ -465,7 +465,7 @@ export const fr: Partial<Record<MessageKey, string>> = {
   'parent.confirmWord': 'Mot de confirmation',
   'parent.cancel': 'Annuler',
   'parent.confirm': 'Confirmer',
-  'parent.noRanking': 'KidGem ne compare jamais les enfants et ne les classe pas. Les résultats montrent la pratique, pas les capacités ni l’intelligence.',
+  'parent.noRanking': 'GemKid ne compare jamais les enfants et ne les classe pas. Les résultats montrent la pratique, pas les capacités ni l’intelligence.',
 
   'settings.title': 'Réglages',
   'settings.for': 'Réglages de {name}',
@@ -495,7 +495,7 @@ export const fr: Partial<Record<MessageKey, string>> = {
   'settings.saved': 'Enregistré.',
   'settings.coverage': 'État de la traduction : {lang} est un brouillon pas encore relu par un locuteur natif.',
 
-  'about.title': 'À propos de KidGem',
+  'about.title': 'À propos de GemKid',
   'help.title': 'Aide et assistance',
   'privacy.title': 'Confidentialité et données (démo)',
   'terms.title': 'Conditions (démo)',

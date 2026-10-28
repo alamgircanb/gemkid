@@ -79,7 +79,7 @@ test('AC14: every catalogue chapter and footer link opens a real page', async ({
   }
 });
 
-test('AC15: direct hash routes under /kidgem/ load after refresh, assets resolve', async ({ page, baseURL }) => {
+test('AC15: direct hash routes under /gemkid/ load after refresh, assets resolve', async ({ page, baseURL }) => {
   const failed: string[] = [];
   page.on('response', (r) => r.status() >= 400 && failed.push(r.url()));
   await page.goto(`${baseURL}#/lesson/math-g3-arrays-01`);
@@ -100,7 +100,7 @@ test('AC17: export, reset and import local records; malformed import rejected', 
   const file = await (await dl).path();
   // Malformed import changes nothing.
   await page.getByLabel('Import records from a file').setInputFiles({ name: 'bad.json', mimeType: 'application/json', buffer: Buffer.from('{"format":"x"}') });
-  await expect(page.getByText('not a valid KidGem export')).toBeVisible();
+  await expect(page.getByText('not a valid GemKid export')).toBeVisible();
   // Delete the learner, then restore from the export.
   await page.getByRole('button', { name: 'Delete this learner' }).click();
   await page.getByLabel('Confirmation word').fill('DELETE');

@@ -1,4 +1,4 @@
-// Original KidGem artwork, drawn in code (see docs/ASSETS.md).
+// Original GemKid artwork, drawn in code (see docs/ASSETS.md).
 import type { AvatarId, ShapeId } from '../domain/types.ts';
 
 const AVATAR_COLOURS: Record<AvatarId, [string, string]> = {

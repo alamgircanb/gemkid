@@ -11,7 +11,7 @@ export function LessonPage({ lessonId }: { lessonId?: string }) {
   const s = useApp();
   const lesson = lessonId ? lessonById(lessonId) : undefined;
   useEffect(() => {
-    document.title = `${lesson?.title ?? t('lesson.notFound')} · KidGem`;
+    document.title = `${lesson?.title ?? t('lesson.notFound')} · GemKid`;
   }, [lesson, t]);
   if (!lesson || !isPlayable(lesson))
     return (

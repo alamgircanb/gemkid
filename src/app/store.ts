@@ -39,8 +39,8 @@ export interface AppState {
   guestPrefs: Preferences;
 }
 
-const ACTIVE_KEY = 'kidgem.activeProfile';
-const GUEST_PREFS_KEY = 'kidgem.guestPrefs';
+const ACTIVE_KEY = 'gemkid.activeProfile';
+const GUEST_PREFS_KEY = 'gemkid.guestPrefs';
 
 export const DEFAULT_PREFS: Preferences = {
   uiLocale: 'en',
@@ -116,7 +116,7 @@ export class AppStore {
     try {
       await op();
     } catch (e) {
-      console.warn('KidGem save failed', e);
+      console.warn('GemKid save failed', e);
       this.set({ saveError: true });
     }
   }

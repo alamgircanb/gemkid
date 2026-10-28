@@ -1,6 +1,6 @@
-# KidGem — status
+# GemKid — status
 
-**Result type: public demo, live at https://alamgircanb.github.io/kidgem/ (local-progress demo).** Not a production beta: no accounts, no backend, no reviewed content.
+**Result type: public demo, live at https://alamgircanb.github.io/gemkid/ (local-progress demo).** Not a production beta: no accounts, no backend, no reviewed content.
 Last updated: 2026-10-28.
 
 ## Milestones
@@ -9,7 +9,7 @@ Last updated: 2026-10-28.
 |---|---|
 | 1. Foundation + first complete lesson (save/resume, next recommendation) | Done |
 | 2. All 12 demo lessons, six reusable games, mastery, rewards, review, parent view | Done |
-| 3. GitHub CI + Pages workflow, `/kidgem/` base path | Done — CI green and deployed on 2026-10-28 |
+| 3. GitHub CI + Pages workflow, `/gemkid/` base path | Done — CI green and deployed on 2026-10-28 |
 | 4. Design/accessibility review | Partly done (see docs/ACCESSIBILITY.md) |
 | 5. Production backend, accounts, content publishing (doc 05, phases 4–5) | Not started |
 
@@ -20,14 +20,14 @@ Last updated: 2026-10-28.
 | Content validation | `node scripts/validate-content.ts` | Pass — 12 lessons, 19 skills, 36 chapters, 96 assessment items; all answers evaluate, robot references reach goals, patterns repeat, graph acyclic |
 | Unit tests | `node --test "tests/unit/**/*.test.ts"` | **45 passed, 0 failed** |
 | Type check | `tsc --noEmit` (TypeScript 7.0.2 available in sandbox, with React/Node types fetched from DefinitelyTyped) | Pass (0 errors) |
-| End-to-end | Playwright 1.63, Chromium, against a production bundle served at `/kidgem/` | **31 passed** (26 desktop + 5 phone-emulation), including every game played to completion with buttons only |
+| End-to-end | Playwright 1.63, Chromium, against a production bundle served at `/gemkid/` | **31 passed** (26 desktop + 5 phone-emulation), including every game played to completion with buttons only |
 | Visual review | Screenshots at 390 / 768 / 1280 px incl. Bengali interface | Reviewed; header overflow and duplicated hint text fixed |
 | Bundle size | esbuild minified JS | 147 KB gzip (budget 250 KB) |
 
 ### GitHub Actions (2026-10-28, run 40692366839)
 
 - Type check, ESLint, content validation, unit tests, Vite build: **pass**.
-- Playwright on GitHub (built app under `/kidgem/`), including the **axe-core scan** of home, explore, dashboard, path, lesson, summary and parent screens: **32 passed**.
+- Playwright on GitHub (built app under `/gemkid/`), including the **axe-core scan** of home, explore, dashboard, path, lesson, summary and parent screens: **32 passed**.
 - Deploy to GitHub Pages: **success**.
 
 The first run exposed two issues (radio inputs not clickable by the newer Playwright; logo link name mismatch flagged by axe); both were fixed.
@@ -55,7 +55,7 @@ The first run exposed two issues (radio inputs not clickable by the newer Playwr
 | AC12 | Partial | no overflow at 320/768/1280; reduced motion + large text; real zoom not tested |
 | AC13 | Pass | e2e oversized loop stops at 120 steps with message; unit limits |
 | AC14 | Pass | e2e opens every catalogue and footer link; planned chapters not linked |
-| AC15 | Pass | e2e direct hash routes + refresh under /kidgem/, no 4xx assets (on local server) |
+| AC15 | Pass | e2e direct hash routes + refresh under /gemkid/, no 4xx assets (on local server) |
 | AC16 | Pass | validator + unit tests for cycles, missing prereqs, bad answers, duplicate IDs, fake publication |
 | AC17 | Pass | e2e export → delete → import; malformed import rejected |
 | AC18 | Pass | e2e with controlled clock; unit schedule tests |
