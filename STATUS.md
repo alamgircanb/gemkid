@@ -1,6 +1,6 @@
 # KidGem — status
 
-**Result type: public-demo-ready source (local-progress demo).** Not a production beta: no accounts, no backend, no reviewed content.
+**Result type: public demo, live at https://alamgircanb.github.io/kidgem/ (local-progress demo).** Not a production beta: no accounts, no backend, no reviewed content.
 Last updated: 2026-10-28.
 
 ## Milestones
@@ -9,7 +9,7 @@ Last updated: 2026-10-28.
 |---|---|
 | 1. Foundation + first complete lesson (save/resume, next recommendation) | Done |
 | 2. All 12 demo lessons, six reusable games, mastery, rewards, review, parent view | Done |
-| 3. GitHub CI + Pages workflow, `/kidgem/` base path | Written; local base-path behaviour tested; **not yet run on GitHub** |
+| 3. GitHub CI + Pages workflow, `/kidgem/` base path | Done — CI green and deployed on 2026-10-28 |
 | 4. Design/accessibility review | Partly done (see docs/ACCESSIBILITY.md) |
 | 5. Production backend, accounts, content publishing (doc 05, phases 4–5) | Not started |
 
@@ -24,15 +24,18 @@ Last updated: 2026-10-28.
 | Visual review | Screenshots at 390 / 768 / 1280 px incl. Bengali interface | Reviewed; header overflow and duplicated hint text fixed |
 | Bundle size | esbuild minified JS | 147 KB gzip (budget 250 KB) |
 
-### Not run in the sandbox (npm registry was blocked)
+### GitHub Actions (2026-10-28, run 40692366839)
 
-- `npm install` / **lockfile** (`package-lock.json` is not committed yet) — CI falls back to `npm install` until one is committed.
-- **Vite** dev server and `vite build` — the app was bundled with a preinstalled esbuild for testing instead.
-- **ESLint** (`npm run lint`).
-- **axe-core** scan (`tests/e2e/a11y.spec.ts`).
-- Real screen readers, real 200 %/400 % browser zoom, real devices, Noto Sans Bengali rendering.
+- Type check, ESLint, content validation, unit tests, Vite build: **pass**.
+- Playwright on GitHub (built app under `/kidgem/`), including the **axe-core scan** of home, explore, dashboard, path, lesson, summary and parent screens: **32 passed**.
+- Deploy to GitHub Pages: **success**.
 
-These all run in GitHub Actions on the first push; check the Actions tab.
+The first run exposed two issues (radio inputs not clickable by the newer Playwright; logo link name mismatch flagged by axe); both were fixed.
+
+### Still not done
+
+- No `package-lock.json` is committed yet (this sandbox cannot reach the npm registry). CI uses `npm install` until one is added — run `npm install` locally and commit the lockfile.
+- Real screen readers, real 200 %/400 % browser zoom, real devices and Bengali font rendering on phones.
 
 ## Acceptance matrix (document 07)
 
@@ -59,8 +62,8 @@ These all run in GitHub Actions on the first push; check the Actions tab.
 
 ## Known limitations / next tasks
 
-1. Push to `github.com/alamgircanb/kidgem`, enable **Settings → Pages → Source: GitHub Actions**, confirm the workflow is green, then commit the `package-lock.json` that `npm install` produces.
-2. Fix anything CI reports from lint/axe (not run locally).
+1. Commit a `package-lock.json` (run `npm install` on a machine with npm access).
+2. Manual accessibility passes listed above.
 3. Educator review of all 12 lessons; fluent French and Bengali review of lessons and interface dictionaries (docs/COVERAGE.md).
 4. Manual screen-reader and real-zoom passes; Bengali font check on devices.
 5. Write alternative item versions for the 8 lessons that lack them.
