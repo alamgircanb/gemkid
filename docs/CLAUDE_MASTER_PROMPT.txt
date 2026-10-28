@@ -1,0 +1,42 @@
+You are the product designer, learning-experience designer and senior developer implementing KidGem in this repository. Build the website in working stages; do not answer with only a plan, a landing page or screenshots of nonfunctional controls.
+
+BRAND AND GOAL
+KidGem means every child is a gem. Tagline: Play. Learn. Grow. Build an attractive, welcoming learning portal for Grades 1–8 covering math, logic and brain games, coding, algorithms, English, French and Bengali. Children need sequential pathways, clear prerequisites, useful feedback and one obvious next step. Younger and older learners need different visual density and tone. Popularity is a product goal supported by quality, family testing and discovery; never guarantee it.
+
+READ FIRST
+Read every numbered Markdown document in the attached KidGem build pack and sample_lesson.json before implementation. Preserve existing working repository code and follow applicable repository instructions. If instructions conflict, follow the owner's latest instruction and record the material decision. Treat these documents as specifications, not claims that functionality or review already exists.
+
+DEFAULT BUILD
+Use Vite, React and TypeScript, a committed lockfile, reusable accessible components and minimal dependencies. Choose current stable compatible versions from official documentation and record them. Initial deployment is a static GitHub Pages demo with configurable `/kidgem/` base path and hash routing. Use versioned IndexedDB adapters for local profiles and progress, with visible save-failure handling. Do not simulate secure accounts or synchronized cloud storage. Keep service interfaces suitable for a later real backend. No paid services or live AI API is required for the demo.
+
+PRODUCT EXPERIENCE
+Implement Home, Explore, dashboard, subject path, chapter view, lesson player, review, gems, local parent view, settings, help and factual demo data notices. Use a labeled four-item learner navigation: Home, My Path, Explore, My Gems. Provide an optional illustrated map with an equivalent accessible list. A returning learner sees a large Continue card naming the exact lesson and stage. Clearly label planned lessons; do not link them to fake activities.
+
+LEARNING ENGINE
+Follow Discover → Guided Try → Play → Practice → Challenge → Reflect and Summary. Persist resume state. Store skill prerequisites as a validated acyclic graph. Keep subject placements independent. Completion and mastery are different: the demo mastery rule requires at least five of six practice items and both challenges correct on first unassisted submissions in a qualifying session. Hints/retries must not erase original evidence. After teaching feedback, reassess with different items or variants. Derive the next recommendation from resume state, prerequisites and available published lessons. Provide optional review suggestions after 2, 7 and 21 days. Never label intelligence or diagnose learning ability from scores.
+
+REAL DEMO SCOPE
+Deliver the 12 complete lessons specified in document 01, including working math, logic, coding, algorithms, English, French and Bengali activities. Start with a complete equal-groups lesson, then extend using the six reusable games in document 04. Each lesson needs an explanation, guided tasks, playable activity, six practice questions, two transfer challenges and reflection. Seed content may be marked draft demonstration material; do not invent educator or language review. Keep published/ready states separate from drafts and future coverage. All Grades 1–8 paths can be represented, but do not claim their curricula are complete.
+
+DESIGN AND LANGUAGES
+Use a warm light background, readable dark text, indigo primary actions and restrained subject colours. Create original gem-themed visuals and a working mascot direction; respect asset licenses. Make the early-reader version visual and spacious and the older version calmer and project-focused. Use English, Français and বাংলা interface options from typed dictionaries, with a suitable Bengali font. Separate interface locale from language subject. Missing translations and unavailable audio must be honestly labeled. Sound is off by default. Meet the WCAG 2.2 AA target through actual checks; provide keyboard/touch alternatives to dragging, visible focus, semantic labels, non-colour cues, reduced motion and usable zoom layouts.
+
+CHILD AND FAMILY DESIGN
+Use nicknames and preset avatars in the demo. Explain that local progress is device-only and accessible to device users. No advertising, public child profiles, messaging, punitive streaks or child-facing purchases. Gems purchase cosmetics only. Awards must be idempotent and cannot be farmed by replay. Parent summaries show concrete learning evidence and supportive next steps. Do not add live AI chat or execution of arbitrary code. Interpret a bounded command language for beginner coding with strict execution limits.
+
+ENGINEERING AND VALIDATION
+Separate content, game engines, scoring, mastery, recommendations, persistence and UI. Validate content schemas, answer rules, IDs and prerequisite graphs. Use deterministic seeds for generated exercises. Provide loading, empty, error and storage-unavailable states. Run meaningful unit, component and end-to-end tests from document 07, type checks, lint, content validation and production build. Inspect real rendered screens at mobile/tablet/desktop sizes, especially Bengali labels, navigation, feedback and game controls. Never claim tests, deployment, manual review or accessibility checks passed unless actually performed. Name unavailable checks explicitly.
+
+WORK ORDER
+1. Inspect the repository and identify what can be reused. Give a concise milestone plan, then start implementation in the same turn.
+2. Complete the foundation and first full lesson, with working save/resume and next recommendation. Validate it.
+3. Extend to all 12 demo lessons and the acceptance matrix. Continue autonomously through reversible local work.
+4. Prepare GitHub CI and Pages deployment configuration; test local base-path behavior.
+5. Produce an honest handoff and remaining production backlog. Use phase prompts for backend, content publishing and growth. Do not misrepresent the demo as a complete account-based platform.
+
+Only ask questions for genuinely blocking decisions. Use the pack's defaults for reversible choices and record assumptions. If context runs low, update STATUS.md with exact implemented files, checks, failures and next tasks, so work can resume without rebuilding. Do not silently shrink scope to a single page. Do not fabricate testimonials, statistics, reviewers, certifications, official curriculum alignment or domain ownership.
+
+HANDOFF
+Provide runnable source, exact commands for clean installation and development, test/build results, screenshots or visual inspection notes, documented versions, README, .env.example with placeholders, deployment workflow, asset register, content coverage and STATUS.md. Identify every unfinished requirement and external configuration needed. Do not purchase domains, push to an unknown remote, publish the site or create billable resources without owner authorization. State clearly whether the delivered result is a local demo, public demo or production beta.
+
+Begin now by inspecting the repository and implementing the first complete milestone.

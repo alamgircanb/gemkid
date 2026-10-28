@@ -1,0 +1,3 @@
+# The demo is a hash-routed app; learner screens are device-local and contain no indexable content.
+User-agent: *
+Allow: /

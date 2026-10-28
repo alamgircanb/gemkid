@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "id": "math-g3-equal-groups-01",
+  "subjectId": "math",
+  "level": {
+    "grade": 3
+  },
+  "chapterId": "math-g3-multiplication",
+  "skillIds": [
+    "math.equal-groups"
+  ],
+  "prerequisiteSkillIds": [
+    "math.count-objects",
+    "math.repeated-addition"
+  ],
+  "title": "Equal groups of gems",
+  "objective": "Find the total in equal groups using repeated addition.",
+  "contentLocale": "en",
+  "estimatedMinutes": 12,
+  "status": "draft",
+  "contentVersion": 1,
+  "review": {
+    "educator": null,
+    "languageReviewer": null,
+    "reviewedAt": null
+  },
+  "conceptBlocks": [
+    {
+      "type": "text",
+      "text": "Three baskets each hold four gems. Add 4 + 4 + 4 to find 12 gems."
+    },
+    {
+      "type": "groupModel",
+      "groups": 3,
+      "itemsPerGroup": 4,
+      "altText": "Three baskets, each containing four gems."
+    }
+  ],
+  "guidedTasks": [
+    {
+      "id": "guided-01",
+      "type": "numeric",
+      "prompt": "There are 2 baskets with 3 gems in each. How many gems altogether?",
+      "answerRule": {
+        "kind": "integer",
+        "value": 6
+      },
+      "explanation": "2 equal groups of 3 make 6.",
+      "misconceptionTag": "adds-group-count-to-group-size",
+      "hints": [
+        "Count 2 groups.",
+        "Add 3 once for each group."
+      ]
+    },
+    {
+      "id": "guided-02",
+      "type": "numeric",
+      "prompt": "There are 3 baskets with 2 gems in each. How many gems altogether?",
+      "answerRule": {
+        "kind": "integer",
+        "value": 6
+      },
+      "explanation": "3 equal groups of 2 make 6.",
+      "misconceptionTag": "adds-group-count-to-group-size",
+      "hints": [
+        "Count 3 groups.",
+        "Add 2 once for each group."
+      ]
+    }
+  ],
+  "game": {
+    "type": "gem-groups",
+    "rounds": [
+      {
+        "groups": 2,
+        "itemsPerGroup": 3
+      },
+      {
+        "groups": 3,
+        "itemsPerGroup": 4
+      },
+      {
+        "groups": 4,
+        "itemsPerGroup": 2
+      }
+    ],
+    "controls": [
+      "select-and-place",
+      "keyboard-increment"
+    ],
+    "timerEnabled": false
+  },
+  "practiceItems": [
+    {
+      "id": "practice-01",
+      "type": "numeric",
+      "prompt": "There are 2 baskets with 3 gems in each. How many gems altogether?",
+      "answerRule": {
+        "kind": "integer",
+        "value": 6
+      },
+      "explanation": "2 equal groups of 3 make 6.",
+      "misconceptionTag": "adds-group-count-to-group-size",
+      "hints": [
+        "Count 2 groups.",
+        "Add 3 once for each group."
+      ]
+    },
+    {
+      "id": "practice-02",
+      "type": "numeric",
+      "prompt": "There are 3 baskets with 4 gems in each. How many gems altogether?",
+      "answerRule": {
+        "kind": "integer",
+        "value": 12
+      },
+      "explanation": "3 equal groups of 4 make 12.",
+      "misconceptionTag": "adds-group-count-to-group-size",
+      "hints": [
+        "Count 3 groups.",
+        "Add 4 once for each group."
+      ]
+    },
+    {
+      "id": "practice-03",
+      "type": "numeric",
+      "prompt": "There are 4 baskets with 2 gems in each. How many gems altogether?",
+      "answerRule": {
+        "kind": "integer",
+        "value": 8
+      },
+      "explanation": "4 equal groups of 2 make 8.",
+      "misconceptionTag": "adds-group-count-to-group-size",
+      "hints": [
+        "Count 4 groups.",
+        "Add 2 once for each group."
+      ]
+    },
+    {
+      "id": "practice-04",
+      "type": "numeric",
+      "prompt": "There are 5 baskets with 3 gems in each. How many gems altogether?",
+      "answerRule": {
+        "kind": "integer",
+        "value": 15
+      },
+      "explanation": "5 equal groups of 3 make 15.",
+      "misconceptionTag": "adds-group-count-to-group-size",
+      "hints": [
+        "Count 5 groups.",
+        "Add 3 once for each group."
+      ]
+    },
+    {
+      "id": "practice-05",
+      "type": "numeric",
+      "prompt": "There are 2 baskets with 5 gems in each. How many gems altogether?",
+      "answerRule": {
+        "kind": "integer",
+        "value": 10
+      },
+      "explanation": "2 equal groups of 5 make 10.",
+      "misconceptionTag": "adds-group-count-to-group-size",
+      "hints": [
+        "Count 2 groups.",
+        "Add 5 once for each group."
+      ]
+    },
+    {
+      "id": "practice-06",
+      "type": "numeric",
+      "prompt": "There are 4 baskets with 4 gems in each. How many gems altogether?",
+      "answerRule": {
+        "kind": "integer",
+        "value": 16
+      },
+      "explanation": "4 equal groups of 4 make 16.",
+      "misconceptionTag": "adds-group-count-to-group-size",
+      "hints": [
+        "Count 4 groups.",
+        "Add 4 once for each group."
+      ]
+    }
+  ],
+  "challenges": [
+    {
+      "id": "challenge-01",
+      "type": "numeric",
+      "prompt": "Three trays each contain five seedlings. How many seedlings are there?",
+      "answerRule": {
+        "kind": "integer",
+        "value": 15
+      },
+      "explanation": "3 equal groups of 5 make 15.",
+      "misconceptionTag": "adds-group-count-to-group-size",
+      "hints": [
+        "Count 3 groups.",
+        "Add 5 once for each group."
+      ]
+    },
+    {
+      "id": "challenge-02",
+      "type": "numeric",
+      "prompt": "Four teams each have three children. How many children are there?",
+      "answerRule": {
+        "kind": "integer",
+        "value": 12
+      },
+      "explanation": "4 equal groups of 3 make 12.",
+      "misconceptionTag": "adds-group-count-to-group-size",
+      "hints": [
+        "Count 4 groups.",
+        "Add 3 once for each group."
+      ]
+    }
+  ],
+  "reflection": {
+    "type": "choice",
+    "prompt": "In three baskets of four gems, what does three describe?",
+    "options": [
+      {
+        "id": "groups",
+        "text": "The number of baskets"
+      },
+      {
+        "id": "per-group",
+        "text": "The gems in each basket"
+      }
+    ],
+    "correctOptionIds": [
+      "groups"
+    ],
+    "explanation": "Three counts the baskets, and four counts the gems in each basket."
+  },
+  "audio": null
+}
